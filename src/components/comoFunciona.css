@@ -1,0 +1,26 @@
+.container-comoFunciona {
+  margin: 2em auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #202327;
+  border-radius: 5px;
+  opacity: 0.8;
+  width: 42em;
+}
+.container-comoFunciona p {
+  width: 9em;
+  margin: 0.625em 1em;
+  color: #f2f2f2;
+  font-size: 1em;
+}
+.container-comoFunciona p:hover {
+  font-size: 1.1em;
+}
+
+@media (max-width: 575.98px) {
+  .container-comoFunciona {
+    width: 33em;
+  }
+}

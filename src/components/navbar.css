@@ -1,0 +1,14 @@
+.navbar {
+  background-color: #000000;
+  border-bottom: 0.1px solid #202327;
+  color: #cc085e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar h1 {
+  font-size: 2em;
+}
+.navbar img {
+  width: 9.375em;
+}

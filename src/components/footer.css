@@ -1,0 +1,20 @@
+.footer {
+  margin: 0.625em auto;
+  color: #cc085e;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer p {
+  width: 100%;
+}
+.footer .redes .icon {
+  color: #cc085e;
+  margin-left: 0.9375em;
+  font-size: 1.4em;
+}
+.footer .redes .icon:hover {
+  color: #f2f2f2;
+}

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
+button {
+  box-shadow: 3px 3px 8px 1px rgba(105, 105, 105, 0.2);
+  background-color: #cc085e;
+  border-radius: 5px;
+  outline: none;
+  color: #f2f2f2;
+  border: none;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+button:hover {
+  background-color: #ff006f;
+  color: #f2f2f2;
+  box-shadow: none;
+}
+body {
+  background-color: #000000;
+  color: #f2f2f2;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/*MEDIA QUERIES 995PX*/
+@media (max-width: 995px) {
+  body {
+    font-size: 14px;
+  }
+}
+/*MEDIA QUERIES 767PX*/
+@media (max-width: 767.98px) {
+  body {
+    font-size: 12px;
+  }
+}
+/*MEDIA QUERIES 575PX*/
+@media (max-width: 575.98px) {
+  body {
+    font-size: 10px;
+  }
+}

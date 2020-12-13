@@ -1,0 +1,52 @@
+.container-login {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2em auto;
+  text-align: center;
+}
+.container-login h1 {
+  font-size: 2.25em;
+}
+.login-explicacion {
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+  align-items: center;
+  width: 50em;
+  margin: 1.875em 14em;
+}
+.login-explicacion ul {
+  list-style: none;
+}
+.login-explicacion ul li {
+  margin-top: 2.5em;
+  width: 12.5em;
+}
+.redes-eleccion {
+  width: 16em;
+  height: 11em;
+  background-color: #202327;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.redes-eleccion h2 {
+  width: 100%;
+  font-size: 1.25em;
+}
+.redes-eleccion a {
+  color: #f2f2f2;
+  font-size: 1.2em;
+  width: 100%;
+}
+.redes-eleccion .icon {
+  margin-right: 0.5em;
+}
+.redes-eleccion a:hover {
+  color: #cc085e;
+}
