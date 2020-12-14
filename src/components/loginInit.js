@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./loginInit.css";
+import firebase from "../firebaseConfig";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -7,6 +8,16 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 class LoginInit extends Component {
+  login() {
+    // const provider = new firebase.auth.GoogleAuthProvider();
+    const provider = new firebase.auth.FacebookAuthProvider();
+    firebase
+      .auth()
+      .signInWithPopup(provider)
+      .then((result) => {
+        console.log(result);
+      });
+  }
   render() {
     return (
       <React.Fragment>
@@ -15,15 +26,15 @@ class LoginInit extends Component {
           <div className="login-explicacion">
             <div className="redes-eleccion">
               <h2>Selecciona una red social</h2>
-              <a href="https://github.com/pupiaguayo">
+              <a onClick={this.login}>
                 <FontAwesomeIcon icon={faGoogle} className="icon" />
                 Google
               </a>
-              <a href="https://instagram.com/pupiaguayo">
+              <a onClick={this.login}>
                 <FontAwesomeIcon icon={faFacebook} className="icon" />
                 Facebook
               </a>
-              <a href="https://twitter.com/pupiaguayo">
+              <a onClick={this.login}>
                 <FontAwesomeIcon icon={faTwitter} className="icon" />
                 Twitter
               </a>
