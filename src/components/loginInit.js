@@ -9,8 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 class LoginInit extends Component {
   login() {
-    // const provider = new firebase.auth.GoogleAuthProvider();
-    const provider = new firebase.auth.FacebookAuthProvider();
+    const provider = new firebase.auth.GoogleAuthProvider();
     firebase
       .auth()
       .signInWithPopup(provider)
